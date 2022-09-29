@@ -14,6 +14,7 @@
   .loadingSpinner {
     width: 64px;
     height: 64px;
+    border-radius: 50px / 20px;
     border: 8px solid;
     border-color: #000 transparent #555 transparent;
     border-radius: 50%;

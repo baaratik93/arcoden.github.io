@@ -1,14 +1,42 @@
-import Spinner from './components/Spinner'
+import React from "react"
+import { MenuNav } from "./components/MenuNav";
+import Blog from "./pages/Blog"
+import Projets from "./pages/Projets"
+import Team from "./pages/Team"
+import Contacts from "./pages/Contacts"
+import Home from "./pages/Home"
+import Error from "./pages/Error"
+import {BrowserRouter , Routes, Route } from "react-router-dom";
+import {Box,Text} from "@chakra-ui/react"
+import {TriangleDownIcon} from "@chakra-ui/icons"
+import CustomFooter from "./components/CustomFooter";
 
-function App() {
 
-  return <>
-  <Spinner/>
-  <h1>Ce blog est en cours de construction!!!</h1>
-  <p>
-    Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam vero, sapiente laboriosam aut hic error fugiat doloribus nobis consequuntur enim aperiam quasi atque quis illum deserunt inventore porro adipisci architecto, totam necessitatibus quia aspernatur eveniet eaque soluta! Blanditiis voluptatibus ad, mollitia nihil temporibus vitae minus, molestiae enim iure aliquam facilis commodi, deleniti veniam voluptas itaque dignissimos. Ducimus delectus, saepe voluptatem voluptate labore quis possimus rerum et est, unde perferendis natus atque? Nesciunt quidem, rerum soluta fugit illo amet sed hic doloremque accusantium cumque dicta magnam repellendus obcaecati laboriosam? Tenetur dicta libero deserunt repellat modi? Suscipit porro quae commodi ad amet.
-  </p>
-  </>
+function App () {
+  return <BrowserRouter>
+         <MenuNav/>
+         <Box px={5} m={1} zIndex="-1000" >
+         <Routes>
+            <Route exact  path="/" element={<Home/>}/>
+            <Route path="/blog" element={<Blog/>}/>
+            <Route path="/projets" element={<Projets/>}/>
+            <Route path="/team" element={<Team/>}/>
+            <Route path="/contacts" element={<Contacts/>}/>
+            <Route path="*" element={<Error/>}/>
+         </Routes>
+         </Box>
+           <CustomFooter>
+                 <Text>
+                    <TriangleDownIcon/>
+                 </Text>
+                 <Text textAlign="center" fontSize={12} justifyContent="center">
+                    &copy;All right reserved 2022 .Inc
+                 </Text>
+                 <Text textAlign="right" fontSize={12}>
+                    Réglements & autorisations
+                 </Text>
+           </CustomFooter>
+         </BrowserRouter>
 }
 
-export default App
+export default App;
