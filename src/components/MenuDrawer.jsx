@@ -19,7 +19,7 @@ const MenuDrawer = () => {
       <Button colorScheme='transparent' onClick={onOpen}><Search2Icon/></Button>
       <Drawer isOpen={isOpen} onClose={onClose} placement='top'>
         <DrawerOverlay />
-        <DrawerContent>
+        <DrawerContent bg='blue.400'>
           <DrawerCloseButton />
           <DrawerHeader>Create your account</DrawerHeader>
 

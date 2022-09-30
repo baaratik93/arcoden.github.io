@@ -14,12 +14,12 @@ const Logo = () => {
               clipPath:"polygon(0% 0%, 100% 1%, 75% 100%, 0% 100%)",
               mb:"-10px",
               pos: 'fixed',
-              bg: 'blue.700',
-              h: '70px',
+              bg: 'blue.400',
+              h: '90px',
               w: '200px',
               left: '0',
-              opacity: '.4',
-              borderRadius: '5px'
+              borderRadius: '5px',
+              zIndex: '-1010'
             }
           }
           boxShadow="xl"  
