@@ -11,13 +11,14 @@ const ListMenu = () => {
       display={["none", "none", "flex", "flex"]}
       minW="50%"
     >
-      {menus.map((menu) => (
+      {menus.map((menu,k) => (
         <ChakraLink
           as={Link}
           display="flex"
           columnGap={2}
           alignItems="center"
           to={menu.to}
+          key={k}
           _focus={{
             borderBottom: "1px solid blue",
           }}

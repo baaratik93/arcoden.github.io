@@ -8,7 +8,20 @@ const Logo = () => {
     <Box
           display="flex"
           gap={2}
-          //clipPath="polygon(0% 0%, 100% 1%, 75% 100%, 0% 100%);"
+          _before = {
+            {
+              content: '""',
+              clipPath:"polygon(0% 0%, 100% 1%, 75% 100%, 0% 100%)",
+              mb:"-10px",
+              pos: 'fixed',
+              bg: 'black',
+              h: '70px',
+              w: '200px',
+              left: '0',
+              opacity: '.4',
+              borderRadius: '5px'
+            }
+          }
           boxShadow="xl"  
           alignItems="center"  
           px={3} 

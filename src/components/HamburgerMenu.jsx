@@ -12,9 +12,9 @@ const HamburgerMenu = () => {
   {({ isOpen }) => (
     <>
       <MenuButton isActive={isOpen} bg="transparent" color="green" rounded="3xl" as={IconButton} icon={<HamburgerIcon />}  display={["block", "block","none", "none"]}/>
-      <MenuList>
+      <MenuList bg='green.300'>
         {
-          menus.map(menu => <MenuItem  icon={menu.icon} onClick={()=> router(menu.to)}>{menu.name}</MenuItem>)
+          menus.map((menu ,k) => <MenuItem key={k}  icon={menu.icon} onClick={()=> router(menu.to)}>{menu.name}</MenuItem>)
         }
       </MenuList>
     </>
