@@ -14,7 +14,7 @@ const Logo = () => {
               clipPath:"polygon(0% 0%, 100% 1%, 75% 100%, 0% 100%)",
               mb:"-10px",
               pos: 'fixed',
-              bg: 'black',
+              bg: 'blue.700',
               h: '70px',
               w: '200px',
               left: '0',
