@@ -7,15 +7,15 @@ import Contacts from "./pages/Contacts"
 import Home from "./pages/Home"
 import Error from "./pages/Error"
 import {BrowserRouter , Routes, Route } from "react-router-dom";
-import {Box,Text} from "@chakra-ui/react"
-import {TriangleDownIcon} from "@chakra-ui/icons"
+import { Box, Text } from "@chakra-ui/react"
+import { TriangleDownIcon } from "@chakra-ui/icons"
 import CustomFooter from "./components/CustomFooter";
 
 
 function App () {
   return <BrowserRouter>
-         <MenuNav/>
-         <Box px={5} m={1} zIndex="-1000" >
+         <Box mx={['5px','50px','100px']}>
+         <MenuNav zIndex="1000" />
          <Routes>
             <Route exact  path="/" element={<Home/>}/>
             <Route path="/blog" element={<Blog/>}/>
@@ -24,7 +24,6 @@ function App () {
             <Route path="/contacts" element={<Contacts/>}/>
             <Route path="*" element={<Error/>}/>
          </Routes>
-         </Box>
            <CustomFooter>
                  <Text>
                     <TriangleDownIcon/>
@@ -36,6 +35,7 @@ function App () {
                     Réglements & autorisations
                  </Text>
            </CustomFooter>
+           </Box>
          </BrowserRouter>
 }
 

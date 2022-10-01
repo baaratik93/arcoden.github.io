@@ -17,10 +17,11 @@ const ListMenu = () => {
           display="flex"
           columnGap={2}
           alignItems="center"
+          fontFamily="Lato"
           to={menu.to}
           key={k}
           _focus={{
-            borderBottom: "1px solid blue",
+            borderBottom: "5px solid blue",
           }}
           _hover={{
             

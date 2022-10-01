@@ -8,22 +8,9 @@ const Logo = () => {
     <Box
           display="flex"
           gap={2}
-          _before = {
-            {
-              content: '""',
-              clipPath:"polygon(0% 0%, 100% 1%, 75% 100%, 0% 100%)",
-              mb:"-10px",
-              pos: 'fixed',
-              bg: 'blue.400',
-              h: '90px',
-              w: '200px',
-              left: '0',
-              borderRadius: '5px',
-              zIndex: '-1010'
-            }
-          }
           boxShadow="xl"  
-          alignItems="center"  
+          alignItems="center"
+          borderRadius="xl"
           px={3} 
           h={50}>
         <Image
@@ -33,9 +20,11 @@ const Logo = () => {
           h={8}
         />
         <Text as="h2"
-          color="white" 
-          fontWeight="bold">
-            ARCODEN
+          color="gold" 
+          fontWeight="bold"
+          fontFamily='cursive'
+          >
+            arcoden
         </Text>
     </Box>
      </Link>

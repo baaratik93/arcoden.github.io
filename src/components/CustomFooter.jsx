@@ -8,12 +8,12 @@ const footFontColor = {
   light: "lightgreen"
 }
 const FootBackground = {
-  dark: "grey",
-  light: "black"
+  dark: "blue.200",
+  light: "gray"
 }
-  return <Box  pos={["","","fixed"]} color={footFontColor[colorMode]} bottom={0} right={0} left={0} bg={FootBackground[colorMode]} >
-      {children}
-  </Box>
+  return <Box mx={['5px','50px','100px']}pos={["","","fixed"]} color={footFontColor[colorMode]} bottom={0} right={0} left={0} bg={FootBackground[colorMode]} >
+            {children}
+        </Box>
 }
 
 export default CustomFooter

@@ -16,8 +16,12 @@ export const MenuNav = () => {
               alignItems='center' 
               gap={2} pos="sticky" 
               top={0}  as="nav" 
-              bg="blue.200"
-              p={1}>    
+              zIndex="1000"
+              mt={5}              
+              p={5}
+              borderBottom='1px solid skyblue'
+              >
+
                 <Logo/>
                 <Spacer/>
                 <ListMenu/>
@@ -28,20 +32,6 @@ export const MenuNav = () => {
                   p={1}
                   rounded= 'md'
                   boxShadow= 'md'
-                  _before = {
-                        {
-                          content: '""',
-                          mb:"-10px",
-                          pos: 'fixed',
-                          bg: 'blue.400',
-                          h: '58px',
-                          w: '100px',
-                          right: '0',
-                          top: '0',
-                          borderRadius: '5px',
-                          zIndex: '-1010'
-                        }
-                      }
                   >
                   <HamburgerMenu/>
                   <MenuDrawer/>
