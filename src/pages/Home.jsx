@@ -25,9 +25,9 @@ export const Home = () => {
                fontSize={40}
                style={
                 {
-                  lineHeight:'1.5',
+                  lineHeight:'1.2',
                   wordSpacing:'3px',
-                  fontFamily: 'Lato'
+                  fontFamily: 'Open Sans'
                 }
                }
                maxW={['200px','250px','400px']}
