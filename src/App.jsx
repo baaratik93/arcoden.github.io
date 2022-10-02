@@ -14,7 +14,7 @@ import CustomFooter from "./components/CustomFooter";
 
 function App () {
   return <BrowserRouter>
-         <Box mx={['5px','50px','100px']}>
+         <Box>
          <MenuNav zIndex="1000" />
          <Routes>
             <Route exact  path="/" element={<Home/>}/>
@@ -25,15 +25,7 @@ function App () {
             <Route path="*" element={<Error/>}/>
          </Routes>
            <CustomFooter>
-                 <Text>
-                    <TriangleDownIcon/>
-                 </Text>
-                 <Text textAlign="center" fontSize={12} justifyContent="center">
-                    &copy;All right reserved 2022 .Inc
-                 </Text>
-                 <Text textAlign="right" fontSize={12}>
-                    Réglements & autorisations
-                 </Text>
+                
            </CustomFooter>
            </Box>
          </BrowserRouter>

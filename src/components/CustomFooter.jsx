@@ -11,7 +11,7 @@ const FootBackground = {
   dark: "blue.200",
   light: "gray"
 }
-  return <Box mx={['5px','50px','100px']}pos={["","","fixed"]} color={footFontColor[colorMode]} bottom={0} right={0} left={0} bg={FootBackground[colorMode]} >
+  return <Box mx={['5px','50px','100px']} pos={["","","fixed"]} color={footFontColor[colorMode]} bottom={0} right={0} left={0} bg={FootBackground[colorMode]} >
             {children}
         </Box>
 }

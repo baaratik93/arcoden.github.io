@@ -18,8 +18,10 @@ export const MenuNav = () => {
               top={0}  as="nav" 
               zIndex="1000"
               mt={5}              
-              p={5}
-              borderBottom='1px solid skyblue'
+              py={5}
+              px={['5px','50px','100px']}
+              rounded={['xl','xl','none']}
+              bg='blue.800'
               >
 
                 <Logo/>
