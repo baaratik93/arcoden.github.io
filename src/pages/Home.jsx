@@ -23,7 +23,6 @@ export const Home = () => {
                fontSize='bold'
                as={Heading}
                textAlign="center"
-               fontSize={40}
                style={
                 {
                   lineHeight:'1.2',
@@ -33,10 +32,11 @@ export const Home = () => {
                }
                maxW={['200px','250px','400px']}
                minW={'','','350px'}
+               mt={10}
                p={1}
-               color='blue.400'
+               color={useColorModeValue('gray.600','gray.300')}
                >
-              Réveille tes compétences en développement web!!!
+              Réveille le génie de la programmation qui dort en toi!!!
             </Text>
               <Button
                 bg='blue.800'
@@ -67,25 +67,25 @@ export const Home = () => {
         pos='absolute'
         mt={['-140','-145','-90','-75']}
         >
-         <SimpleGrid boxShadow='lg' justifyItems='center' rounded='2xl' boxShadow="md">
+         <SimpleGrid boxShadow='lg' justifyItems='center' rounded='2xl'>
             <Text fontSize={20} fontWeight='bold' color='blue.800' fontFamily='Sans'>
               6k abonnés
             </Text>
             <Image  src={work} minW='24' maxW='90'/>
          </SimpleGrid>
-         <SimpleGrid boxShadow='lg' justifyItems='center' rounded='2xl' boxShadow="md">
+         <SimpleGrid boxShadow='lg' justifyItems='center' rounded='2xl'>
             <Text fontSize={20} fontWeight='bold' color='blue.800' fontFamily='Sans'>
               3000 vidéos
             </Text>
             <Image src={work} minW='24' maxW='90'/>
          </SimpleGrid>
-         <SimpleGrid boxShadow='lg' justifyItems='center' rounded='2xl' boxShadow="md">
+         <SimpleGrid boxShadow='lg' justifyItems='center' rounded='2xl'>
             <Text fontSize={20} fontWeight='bold' color='blue.800' fontFamily='Sans'>
               500 étudiants
             </Text>
             <Image src={work} minW='24' maxW='90'/>
          </SimpleGrid>
-         <SimpleGrid boxShadow='lg' justifyItems='center' rounded='2xl' boxShadow="md">
+         <SimpleGrid boxShadow='lg' justifyItems='center' rounded='2xl'>
             <Text fontSize={20} fontWeight='bold' color='blue.800' fontFamily='Sans'>
               8 projets
             </Text>

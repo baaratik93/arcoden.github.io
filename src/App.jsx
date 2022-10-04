@@ -14,8 +14,8 @@ import Footer from "./components/Footer";
 
 function App () {
   return <BrowserRouter>
-         <Box>
-         <MenuNav zIndex="1000" />
+         <Box py={12}>
+         <MenuNav/>
          <Routes>
             <Route exact  path="/" element={<Home/>}/>
             <Route path="/blog" element={<Blog/>}/>

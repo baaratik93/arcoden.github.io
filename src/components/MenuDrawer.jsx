@@ -8,7 +8,8 @@ import {
   DrawerCloseButton,
   Button,
   Input,
-  useDisclosure
+  useDisclosure,
+  useColorModeValue
 } from '@chakra-ui/react'
 import {Search2Icon} from "@chakra-ui/icons"
 
@@ -16,7 +17,7 @@ const MenuDrawer = () => {
   const { isOpen, onOpen, onClose } = useDisclosure()
   return (
     <>
-      <Button colorScheme='transparent' onClick={onOpen}><Search2Icon/></Button>
+      <Button color={useColorModeValue('white', 'gold')} colorScheme='transparent' onClick={onOpen}><Search2Icon/></Button>
       <Drawer isOpen={isOpen} onClose={onClose} placement='top'>
         <DrawerOverlay />
         <DrawerContent bg='blue.400'>

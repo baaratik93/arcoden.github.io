@@ -15,7 +15,10 @@ export const MenuNav = () => {
               justifyContent='center'
               alignItems='center' 
               gap={2}
-              pos="sticky" 
+              pos="fixed"
+              top='-5'
+              left='0'
+              right='0'
               as="nav" 
               zIndex="1000"
               mt={5}              
@@ -30,12 +33,13 @@ export const MenuNav = () => {
                 <Spacer/>
                 <Flex
                   gap={2}
-                  bg='blue.400'
+                  bg={useColorModeValue('gray.300','gray.700')}
                   p={1}
                   rounded= 'md'
                   boxShadow= 'md'
                   >
-                  <HamburgerMenu/>
+                  
+                  <HamburgerMenu color={useColorModeValue('gold','white')}/>
                   <MenuDrawer/>
                   <ToggleColorMode/>
                 </Flex>
