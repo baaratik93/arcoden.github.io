@@ -9,7 +9,7 @@ import Error from "./pages/Error"
 import {BrowserRouter , Routes, Route } from "react-router-dom";
 import { Box, Text } from "@chakra-ui/react"
 import { TriangleDownIcon } from "@chakra-ui/icons"
-import CustomFooter from "./components/CustomFooter";
+import Footer from "./components/Footer";
 
 
 function App () {
@@ -24,9 +24,6 @@ function App () {
             <Route path="/contacts" element={<Contacts/>}/>
             <Route path="*" element={<Error/>}/>
          </Routes>
-           <CustomFooter>
-                
-           </CustomFooter>
            </Box>
          </BrowserRouter>
 }

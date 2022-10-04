@@ -19,8 +19,8 @@ export default  [
         // icon: <FiCommand/>
     },
     {  
-        name: "Equipe",
-        to: "/team",
+        name: "Autoformations",
+        to: "/cours",
         fontSize:["6", "12", "16", "18"],
         mx:"2",
         // icon: <IoPeople/>

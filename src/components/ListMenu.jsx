@@ -20,6 +20,7 @@ const ListMenu = () => {
           fontFamily="Lato"
           to={menu.to}
           key={k}
+          color='wheat'
           _focus={{
             borderBottom: "5px solid blue",
           }}

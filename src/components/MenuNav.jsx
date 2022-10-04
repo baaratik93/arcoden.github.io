@@ -1,4 +1,4 @@
-import {Box, Flex, Spacer, Input} from "@chakra-ui/react";
+import {Box, Flex, Spacer, Input, useColorModeValue} from "@chakra-ui/react";
 import Logo from "./Logo";
 import ListMenu from "./ListMenu";
 import HamburgerMenu from "./HamburgerMenu";
@@ -14,14 +14,14 @@ export const MenuNav = () => {
   return  <Flex 
               justifyContent='center'
               alignItems='center' 
-              gap={2} pos="sticky" 
-              top={0}  as="nav" 
+              gap={2}
+              pos="sticky" 
+              as="nav" 
               zIndex="1000"
               mt={5}              
               py={5}
               px={['5px','50px','100px']}
-              rounded={['xl','xl','none']}
-              bg='blue.800'
+              bg={useColorModeValue('gray.600','gray.800')}
               >
 
                 <Logo/>
