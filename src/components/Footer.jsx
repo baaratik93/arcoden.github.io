@@ -74,8 +74,9 @@ export default function LargeWithNewsletter() {
     <Box
     pos='relative'
     bottom='0'
-      bg={useColorModeValue('gray.50', 'gray.900')}
-      color={useColorModeValue('gray.700', 'gray.200')}>
+    mt={5}
+    bg={useColorModeValue('gray.300', 'gray.900')}
+    color={useColorModeValue('gray.700', 'gray.200')}>
       <Container as={Stack} maxW={'6xl'} py={10}>
         <SimpleGrid
           templateColumns={{ sm: '1fr 1fr', md: '2fr 1fr 1fr 2fr' }}
@@ -85,7 +86,7 @@ export default function LargeWithNewsletter() {
               <Logo color={useColorModeValue('gray.700', 'white')} />
             </Box>
             <Text fontSize={'sm'}>
-              © 2022 Chakra Templates. All rights reserved
+              © 2022 Arcoden. All rights reserved
             </Text>
             <Stack direction={'row'} spacing={6}>
               <SocialButton label={'Twitter'} href={'#'}>

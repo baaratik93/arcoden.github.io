@@ -1,5 +1,5 @@
 import { Image } from '@chakra-ui/image'
-import { Text, Box, Heading } from '@chakra-ui/react'
+import { Text, Box, Heading, useColorModeValue } from '@chakra-ui/react'
 import React from 'react'
 import { Link } from "react-router-dom"
 import logo from "../images/logo.png"
@@ -10,8 +10,9 @@ const Logo = () => {
           gap={2}
           boxShadow="xl"  
           alignItems="center"
-          borderRadius="xl"
-          px={3} 
+          borderRadius="md"
+          bg={useColorModeValue('gray.400','gray.700')}
+          p={5} 
           h={50}>
         <Image
           src='/Puzzle.svg'

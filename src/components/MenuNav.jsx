@@ -33,7 +33,7 @@ export const MenuNav = () => {
                 <Spacer/>
                 <Flex
                   gap={2}
-                  bg={useColorModeValue('gray.300','gray.700')}
+                  bg={useColorModeValue('gray.400','gray.700')}
                   p={1}
                   rounded= 'md'
                   boxShadow= 'md'

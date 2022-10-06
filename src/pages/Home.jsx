@@ -9,14 +9,14 @@ import { Carousel } from "react-responsive-carousel";
 
 export const Home = () => {
   return (
-    <><Box pos='relative'>
+    <><SimpleGrid gap={10} >
       <Flex
         flexDirection={["column", "column", "row", "row"]}
         alignItems="center"
         justifyItems="center"
         px={['5px','50px','100px']}
         pb={12}
-        bg={useColorModeValue('gray.300','gray.700')}
+        bg={useColorModeValue('white','gray.700')}
       >
         <VStack gap={1} mb='12' ml={["","","",150]}>
             <Text
@@ -24,7 +24,7 @@ export const Home = () => {
                as={Heading}
                textAlign="center"
                style={
-                {
+               {
                   lineHeight:'1.2',
                   wordSpacing:'3px',
                   fontFamily: 'Open Sans'
@@ -34,7 +34,7 @@ export const Home = () => {
                minW={'','','350px'}
                mt={10}
                p={1}
-               color={useColorModeValue('gray.600','gray.300')}
+               color={useColorModeValue('gray.500','gray.300')}
                >
               Réveille le génie de la programmation qui dort en toi!!!
             </Text>
@@ -54,9 +54,10 @@ export const Home = () => {
       </Flex>
       <SimpleGrid
         maxW={['300','400','700','900']}
-        bg={useColorModeValue('gray.200','gray.500')}
+        bg={useColorModeValue('gray.100','gray.700')}
         h='auto'
         mx='auto'
+        mt='-20'
         gap={3}
         columns={['2','2','4','4']}
         borderRadius='20px'
@@ -64,48 +65,45 @@ export const Home = () => {
         right={['5','10','30','50']}
         p={3}
         zIndex='100'
-        pos='absolute'
-        mt={['-140','-145','-90','-75']}
         >
-         <SimpleGrid boxShadow='lg' justifyItems='center' rounded='2xl'>
-            <Text fontSize={20} fontWeight='bold' color='blue.800' fontFamily='Sans'>
+         <SimpleGrid
+            boxShadow='lg'
+            justifyItems='center'
+            rounded='2xl'>
+            <Text fontSize={20} fontWeight='bold' color={useColorModeValue('gray.600','gray.400')} fontFamily='Sans'>
               6k abonnés
             </Text>
-            <Image  src={work} minW='24' maxW='90'/>
+            <Image display={['none','none','block','block']}  src={work} minW='24' maxW='90'/>
          </SimpleGrid>
          <SimpleGrid boxShadow='lg' justifyItems='center' rounded='2xl'>
-            <Text fontSize={20} fontWeight='bold' color='blue.800' fontFamily='Sans'>
+            <Text fontSize={20} fontWeight='bold' color={useColorModeValue('gray.600','gray.400')} fontFamily='Sans'>
               3000 vidéos
             </Text>
-            <Image src={work} minW='24' maxW='90'/>
+            <Image display={['none','none','block','block']} src={work} minW='24' maxW='90'/>
          </SimpleGrid>
          <SimpleGrid boxShadow='lg' justifyItems='center' rounded='2xl'>
-            <Text fontSize={20} fontWeight='bold' color='blue.800' fontFamily='Sans'>
+            <Text fontSize={20} fontWeight='bold' color={useColorModeValue('gray.600','gray.400')} fontFamily='Sans'>
               500 étudiants
             </Text>
-            <Image src={work} minW='24' maxW='90'/>
+            <Image display={['none','none','block','block']} src={work} minW='24' maxW='90'/>
          </SimpleGrid>
          <SimpleGrid boxShadow='lg' justifyItems='center' rounded='2xl'>
-            <Text fontSize={20} fontWeight='bold' color='blue.800' fontFamily='Sans'>
+            <Text fontSize={20} fontWeight='bold' color={useColorModeValue('gray.600','gray.400')} fontFamily='Sans'>
               8 projets
             </Text>
-            <Image src={work} minW='24' maxW='90'/>
+            <Image display={['none','none','block','block']} src={work} minW='24' maxW='90'/>
          </SimpleGrid>
-         </SimpleGrid>
+      </SimpleGrid>
      <Box
         px={['5px','50px','100px']}
-        pt='100px' pos='absolute'
         w='full'
-        mt='-2'
-        bg={useColorModeValue('gray.400','gray.800')}
-        h={400}
+        mt='-20'
+        bg={useColorModeValue('gray.200','gray.800')}
         >
        <Heading
-         mb={5}
-        borderBottom='1px'
-        borderColor='blue.800'
+        py={10}
         mt={['50','50','20','20']}
-        color={useColorModeValue('white','gold')} >
+        color={useColorModeValue('gray.500','gray.400')} >
          Masterclass
        </Heading>
        <SimpleGrid columns='3' gap={20}>
@@ -134,40 +132,25 @@ export const Home = () => {
      </Box>
      <Box
         px={['5px','50px','100px']}
-        py={12} pos='absolute'
         w='full'
-        mt='392'
-        h={400}
-        bg={useColorModeValue('gray.400','gray.800')}
+        bg={useColorModeValue('white','gray.800')}
       >
        <Heading
           mb={5}
-          borderBottom='1px'
-          borderColor='blue.800'
-          mt='10'
-          color={useColorModeValue('white','gold')} >
+          color={useColorModeValue('gray.500','gray.400')} >
          Derniers articles
        </Heading>
      </Box>
      <Box
         px={['5px','50px','100px']}
-        py={12}
-        pos='absolute'
         w='full'
-        mt='792'
-        bg={useColorModeValue('gray.300','gray.700')}
+        bg={useColorModeValue('whiteAlpha','gray.700')}
         >
        <ContactForm/>
      </Box>
-     <Box
-        py={0} pos='absolute'
-        w='full'
-        mt='1500'
-        bg='gray.300'>
-           <Footer/>
-     </Box>
+     
 
-     </Box>
+     </SimpleGrid>
     </>
   );
 };
