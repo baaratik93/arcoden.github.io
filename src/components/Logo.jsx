@@ -1,33 +1,31 @@
 import { Image } from '@chakra-ui/image'
-import { Text, Box, Heading, useColorModeValue } from '@chakra-ui/react'
+import { Text, HStack, Heading, useColorModeValue } from '@chakra-ui/react'
 import React from 'react'
 import { Link } from "react-router-dom"
 import logo from "../images/logo.png"
 const Logo = () => {
   return <Link to="/">
-    <Box
-          display="flex"
-          gap={2}
+    <HStack
           boxShadow="xl"  
-          alignItems="center"
           borderRadius="md"
           bg={useColorModeValue('gray.400','gray.700')}
-          p={5} 
-          h={50}>
+          h={50}
+          p={2}>
         <Image
           src='/Puzzle.svg'
-          mx={3} 
-          w={8} 
+          w={10} 
           h={8}
         />
         <Heading
+          as ='h1'
+          size='lg'
           color="gold" 
           fontWeight="bold"
           fontFamily='Lobster'
           >
             arcoden
         </Heading>
-    </Box>
+    </HStack>
      </Link>
 }
 

@@ -1,4 +1,4 @@
-import {useColorModeValue, Image, Box, Heading, Text, VStack, Flex, Button, SimpleGrid } from "@chakra-ui/react";
+import {useColorModeValue,Badge ,Stack,HStack, Image, Box, Heading, Text, VStack, Flex, Button, SimpleGrid } from "@chakra-ui/react";
 import sailor from "../images/sailor.png";
 import isometric from "../images/isometric.png";
 import work from "../images/work.png";
@@ -96,38 +96,117 @@ export const Home = () => {
       </SimpleGrid>
      <Box
         px={['5px','50px','100px']}
+        pb='20'
         w='full'
         mt='-20'
         bg={useColorModeValue('gray.200','gray.800')}
         >
        <Heading
-        py={10}
+        py={5}
         mt={['50','50','20','20']}
         color={useColorModeValue('gray.500','gray.400')} >
          Masterclass
        </Heading>
-       <SimpleGrid columns='3' gap={20}>
-          <Box>
-             useSystemColorModh
-             useSystemColorModh
-             useSystemColorModh
-             useSystemColorModh5
-             useSystemColorModh
-          </Box>
-          <Box>
-             useSystemColorModh
-             useSystemColorModh
-             useSystemColorModh
-             useSystemColorModh
-             useSystemColorModh
-          </Box>
-          <Box>
-             useSystemColorModh
-             useSystemColorModh
-             useSystemColorModh
-             useSystemColorModh
-             useSystemColorModh
-          </Box>
+          
+       <SimpleGrid             
+         columns={['1','1','2','3']}
+         mx={['12','10','1','1']}
+         gap={5}>
+          <SimpleGrid
+            boxShadow='lg'
+            bg='gray.100'
+            justifyContent='left'
+            gap='3'
+            rounded='lg'
+            cursor='pointer'>
+             <HStack p={5} >
+                <Image src='excel.png' width='200' h='130' rounded='lg'/>
+             <Heading
+                as='h2'
+                size='md'
+                mx='auto'
+             >
+                Apprendre Excel
+             </Heading>
+             </HStack>
+             <SimpleGrid gap='1' py={5}>
+              <Badge mx='20' colorScheme='green'>Niveau 1</Badge>
+              <Badge mx='20' colorScheme='red'>Débutant</Badge>
+              <Badge mx='20' colorScheme='purple'>Par Mamadou H. Thiam</Badge>
+             </SimpleGrid>
+          </SimpleGrid>
+
+          <SimpleGrid
+            boxShadow='lg'
+            bg='gray.100'
+            justifyContent='left'
+            gap='3'
+            rounded='lg'
+            cursor='pointer'>
+             <HStack p={5} >
+                <Image src='advencedexcel.jpg' width='50' h='130' rounded='lg'/>
+             <Heading
+                as='h2'
+                size='md'
+                mx='auto'
+             >
+                Apprendre Excel
+             </Heading>
+             </HStack>
+             <SimpleGrid gap='1' py={5}>
+              <Badge mx='20' colorScheme='green'>Niveau 2</Badge>
+              <Badge mx='20' colorScheme='red'>Avancé</Badge>
+              <Badge mx='20' colorScheme='purple'>Par Mamadou H. Thiam</Badge>
+             </SimpleGrid>
+          </SimpleGrid>
+
+          <SimpleGrid
+            boxShadow='lg'
+            bg='gray.100'
+            justifyContent='left'
+            gap='3'
+            rounded='lg'
+            cursor='pointer'>
+             <HStack p={5} >
+                <Image src='excel.png' width='20' h='90' rounded='lg'/>
+             <Heading
+                as='h2'
+                size='md'
+                mx='auto'
+             >
+                Apprendre Excel
+             </Heading>
+             </HStack>
+             <SimpleGrid gap='1' py={5}>
+              <Badge mx='20' colorScheme='green'>Niveau 1</Badge>
+              <Badge mx='20' colorScheme='red'>13-06-93</Badge>
+              <Badge mx='20' colorScheme='purple'>Par Mamadou H. Thiam</Badge>
+             </SimpleGrid>
+          </SimpleGrid>
+
+          <SimpleGrid
+            boxShadow='lg'
+            bg='gray.100'
+            justifyContent='left'
+            gap='3'
+            rounded='lg'
+            cursor='pointer'>
+             <HStack p={5} >
+                <Image src='excel.png' width='20' h='90' rounded='lg'/>
+             <Heading
+                as='h2'
+                size='md'
+                mx='auto'
+             >
+                Apprendre Excel
+             </Heading>
+             </HStack>
+             <SimpleGrid gap='1' py={5}>
+              <Badge mx='20' colorScheme='green'>Niveau 1</Badge>
+              <Badge mx='20' colorScheme='red'>13-06-93</Badge>
+              <Badge mx='20' colorScheme='purple'>Par Mamadou H. Thiam</Badge>
+             </SimpleGrid>
+          </SimpleGrid>
        </SimpleGrid>
      </Box>
      <Box
