@@ -16,14 +16,14 @@ const SingleMasterClass = ({title, level, author, image}) => {
 			</Badge>
 			<HStack p={3} pos='absolute' gap={1} left='0' right='0'>
 				<Image src={image} h="150" w={150}/>
-				<Heading size='md'>{title}</Heading>
+				<Heading size={['xs','md','md','md']}>{title}</Heading>
 			</HStack>
 			<Text pos='absolute' top='60%' fontSize={['12','13','13','11']} px='5'>
 				Quoi de mieux d'explorer l'ensemble du logiciel Excel
 				avant de l'utiliser. Dans cette série, nous allons vous
 				monter l'environnement qui compose ce tableur.
 			</Text>
-			<Flex justifyContent='center' alignItems='center' bg='gray.300' pos='absolute' top='90%' left='0' right='0' bottom='0' gap={10} p={5}>
+			<Flex justifyContent='center' alignItems='center' bg='gray.300' pos='absolute' top='95%' left='0' right='0' bottom='0' gap={10} p={5}>
 				<Heading size='sm'>{level}</Heading>
 				<Heading size='sm'>{author}</Heading>
 				<Heading size='sm'>{}</Heading>
