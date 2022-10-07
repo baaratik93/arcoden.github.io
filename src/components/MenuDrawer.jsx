@@ -17,7 +17,7 @@ const MenuDrawer = () => {
   const { isOpen, onOpen, onClose } = useDisclosure()
   return (
     <>
-      <Button color={useColorModeValue('white', 'gold')} colorScheme='transparent' onClick={onOpen}><Search2Icon/></Button>
+      <Button color={useColorModeValue('gray.200', 'gold')} colorScheme='transparent' onClick={onOpen}><Search2Icon/></Button>
       <Drawer isOpen={isOpen} onClose={onClose} placement='top'>
         <DrawerOverlay />
         <DrawerContent bg='blue.400'>
