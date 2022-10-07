@@ -101,7 +101,8 @@ export const Home = () => {
        <SimpleGrid             
          columns={['1','1','2','3']}
          mx={['12','10','1','1']}
-         gap={3}>
+         gap={10}
+         >
           <SingleMasterClass level='1' author='Mamadou Thiam'    title='Excel: Découverte'  image='excel.png'/>
           <SingleMasterClass level='2' author='Momo'             title='Apprendre Excel'    image='data.svg'/>
           <SingleMasterClass level='3' author='Djiby Mbaye'      title='Analyse avec Excel' image='advencedexcel.jpg'/>
