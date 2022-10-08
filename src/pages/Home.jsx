@@ -103,8 +103,26 @@ export const Home = () => {
          mx={['12','10','1','1']}
          gap={10}
          >
-          <SingleMasterClass level='1' author='Mamadou Thiam'    title='Excel: Découverte'  image='excel.png'/>
-          <SingleMasterClass level='2' author='Momo'             title='Apprendre Excel'    image='data.svg'/>
+          <SingleMasterClass
+            level='1'
+            author='Mamadou Thiam'
+            videos='13'
+            title='Excel: Découverte'
+            image='excel.png'
+            language='Poular'
+            body="Quoi de mieux d'explorer l'ensemble du logiciel Excel
+                  avant de l'utiliser. Dans cette série, nous allons vous
+                  monter l'environnement qui compose ce tableur."
+                  />
+          <SingleMasterClass
+            level='2'
+            author='Momo'
+            title='Apprendre Excel'
+            image='data.svg'
+            body="Après une mûre exploration du tableur Excel, apprenez à
+                  l'utiliser en passant par la saisie des données,
+                   l'évaluation de formules et de fonctions."
+            />
           <SingleMasterClass level='3' author='Djiby Mbaye'      title='Analyse avec Excel' image='advencedexcel.jpg'/>
           <SingleMasterClass level='4' author='Ousseynou Fofana' title='Excel: Les Macros'  image='advencedexcel.jpg'/>
        </SimpleGrid>
