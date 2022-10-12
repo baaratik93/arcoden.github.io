@@ -17,6 +17,7 @@ arcoden-api/node_modules
 arcoden-next/nodes_modules
 .vscode/*
 !.vscode/extensions.json
+arcoden-next/nodes_modules/.next
 .idea
 .DS_Store
 *.suo
