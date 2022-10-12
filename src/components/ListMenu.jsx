@@ -1,5 +1,5 @@
 import React from "react";
-import { Box, Link as ChakraLink } from "@chakra-ui/react";
+import { Box, Link as ChakraLink, useColorModeValue } from "@chakra-ui/react";
 import { Link } from "react-router-dom";
 import menus from "../utils/menus";
 
@@ -18,11 +18,12 @@ const ListMenu = () => {
           columnGap={2}
           alignItems="center"
           fontFamily="Lato"
+          fontSize={18}
           to={menu.to}
           key={k}
-          color='wheat'
+          color={useColorModeValue('gray.50','gray.400')}
           _focus={{
-            borderBottom: "5px solid blue",
+            borderBottom: "5px solid gray",
           }}
           _hover={{
             

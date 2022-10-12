@@ -8,6 +8,7 @@ import Footer from '../components/Footer'
 import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
 import { Carousel } from "react-responsive-carousel";
 import { CustomHeader } from "../components/CustomHeader";
+import SingleStats from "../components/SingleStats";
 
 export const Home = () => {
   return (
@@ -42,7 +43,7 @@ export const Home = () => {
                 <Text color='gold'>Commencez-ici!</Text>
               </Button>
           </VStack>
-      <Carousel autoPlay autoFocus infiniteLoop interval={2500}>
+      <Carousel showStatus={false} showIndicators={false} showArrows={false} autoPlay autoFocus infiniteLoop interval={2500}>
         <Image src={sailor}  maxW="md" maxH="md" />
         <Image src={isometric}   maxW="md" maxH="md" />
         <Image src={work}   maxW="md" maxH="md" />
@@ -66,40 +67,10 @@ export const Home = () => {
               transform='translateY(-60px)'
               zIndex='100'
               >
-               <SimpleGrid
-                  boxShadow='2xl'
-                  justifyItems='center'
-                  bg={useColorModeValue('gray.300','gray.700')}
-                  rounded='lg'>
-                  <Text
-                    fontSize={20} 
-                    fontWeight='bold' color={useColorModeValue('gray.600','gray.400')} fontFamily='Sans'>
-                    6k abonnés
-                  </Text>
-                  <Image display={['none','none','block','block']}  src={work} minW='24' maxW='90'/>
-               </SimpleGrid>
-               <SimpleGrid
-                boxShadow='2xl' justifyItems='center' bg={useColorModeValue('gray.300','gray.700')}
-                rounded='lg'>
-                  <Text fontSize={20} fontWeight='bold' color={useColorModeValue('gray.600','gray.400')} fontFamily='Sans'>
-                    3000 vidéos
-                  </Text>
-                  <Image display={['none','none','block','block']} src={work} minW='24' maxW='90'/>
-               </SimpleGrid>
-               <SimpleGrid boxShadow='xl' justifyItems='center' bg={useColorModeValue('gray.300','gray.700')}
-               rounded='lg'>
-                  <Text fontSize={20} fontWeight='bold' color={useColorModeValue('gray.600','gray.400')} fontFamily='Sans'>
-                    500 étudiants
-                  </Text>
-                  <Image display={['none','none','block','block']} src={work} minW='24' maxW='90'/>
-               </SimpleGrid>
-               <SimpleGrid boxShadow='xl' justifyItems='center' bg={useColorModeValue('gray.300','gray.700')}
-               rounded='lg'>
-                  <Text fontSize={20} fontWeight='bold' color={useColorModeValue('gray.600','gray.400')} fontFamily='Sans'>
-                    8 projets
-                  </Text>
-                  <Image display={['none','none','block','block']} src={work} minW='24' maxW='90'/>
-               </SimpleGrid>
+               <SingleStats title="6k abonnés" photo={work}/>
+               <SingleStats title="3k videos" photo={work}/>
+               <SingleStats title="30 édudiants" photo={work}/>
+               <SingleStats title="8 projects" photo={work}/>
             </SimpleGrid>
        
        <CustomHeader title="Masterclass"/>  
