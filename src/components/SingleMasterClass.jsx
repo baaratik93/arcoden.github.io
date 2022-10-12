@@ -9,6 +9,7 @@ const SingleMasterClass = ({title, level, author, image, language, videos, body}
 				pos='relative'
 				w="auto"
 				h="300"
+				p={1}
 				boxShadow='2xl'
 				rounded='lg'
 				overflow='hidden'
@@ -26,46 +27,19 @@ const SingleMasterClass = ({title, level, author, image, language, videos, body}
 				right='0'>
 					{ShowLevel(level)}
 			</Badge>
-			<HStack p={3} pos='absolute' gap={1} left='0' right='0'>
+			<Flex justify='center' alignItems='center' p={3} pos='absolute' gap={5} left='0' right='0'>
 				<Image src={image} h="140" w={150}/>
 				<Heading size={['xs','md','md','md']}>{title}</Heading>
-			</HStack>
-			<Text pos='absolute'
-				  top='54%'
-				  fontSize={['12','13','12','11']}
-				  px='5'>
-				{body}
+			</Flex>
+			<Text pos='absolute' top='54%' fontSize={['12','13','12','11']} px='5'>
+				Quoi de mieux d'explorer l'ensemble du logiciel Excel
+				avant de l'utiliser. Dans cette série, nous allons vous
+				monter l'environnement qui compose ce tableur.
 			</Text>
-			<Flex justifyContent='center'
-				  alignItems='center'
-				  bg={useColorModeValue('gray.400','gray.600')}
-				  pos='absolute'
-				  top='85%'
-				  left='0's
-				  right='0'
-				  bottom='0'
-				  gap={10}
-				  p={5}>
-				<Heading
-					size='xs'
-					rounded='lg'
-					fontSize='12'
-					p={1} bg='blue.200'>
-						<Badge rounded='md'>
-							{videos}
-						</Badge>
-						videos
-				</Heading>
-				<Heading
-					size='xs'
-					fontSize='12'>
-						{author}
-				</Heading>
-				<Heading
-					size='xs'
-					fontSize='12'>
-						{language}
-				</Heading>
+			<Flex justify='start' alignItems='center' bg={useColorModeValue('gray.400','gray.600')} pos='absolute' top='85%' left='0' right='0' bottom='0' gap={10} p={5}>
+				<Heading size='sm'>{level}</Heading>
+				<Heading size='sm'>{author}</Heading>
+				<Heading size='sm'>{}</Heading>
 			</Flex>
 
 		

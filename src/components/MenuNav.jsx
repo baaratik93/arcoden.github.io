@@ -1,10 +1,10 @@
 import {Box, Flex, Spacer, Input, useColorModeValue} from "@chakra-ui/react";
 import Logo from "./Logo";
 import ListMenu from "./ListMenu";
-import HamburgerMenu from "./HamburgerMenu";
-import MenuDrawer from "./MenuDrawer";
 import { useState } from "react";
 import { ToggleColorMode } from "./ToggleColorMode";
+import SidebarMenuDrawer from "./SidebarMenuDrawer";
+import SearchDrawer from "./SearchDrawer"
 
 
 
@@ -33,14 +33,13 @@ export const MenuNav = () => {
                 <Spacer/>
                 <Flex
                   gap={2}
-                  bg={useColorModeValue('gray.400','gray.700')}
+                  bg={useColorModeValue('gray.500','gray.700')}
                   p={1}
                   rounded= 'md'
                   boxShadow= 'md'
                   >
-                  
-                  <HamburgerMenu color={useColorModeValue('gold','white')}/>
-                  <MenuDrawer/>
+                  <SidebarMenuDrawer/>
+                  <SearchDrawer/>
                   <ToggleColorMode/>
                 </Flex>
           </Flex>
