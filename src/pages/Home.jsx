@@ -87,6 +87,7 @@ export const Home = () => {
             title='Excel: Découverte'
             image='excel.png'
             language='Poular'
+            status="en cours"
             body="Quoi de mieux d'explorer l'ensemble du logiciel Excel
                   avant de l'utiliser. Dans cette série, nous allons vous
                   monter l'environnement qui compose ce tableur."

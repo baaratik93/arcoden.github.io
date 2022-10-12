@@ -15,6 +15,8 @@ dist-ssr
 # Editor directories and files
 arcoden-api/node_modules
 arcoden-next/nodes_modules
+arcoden-api
+arcoden-next
 .vscode/*
 !.vscode/extensions.json
 arcoden-next/nodes_modules/.next
@@ -25,3 +27,4 @@ arcoden-next/nodes_modules/.next
 *.njsproj
 *.sln
 *.sw?
+.env

@@ -9,6 +9,8 @@ import Error from "./pages/Error";
 import { BrowserRouter , Routes, Route } from "react-router-dom";
 import { Box, Text } from "@chakra-ui/react";
 import Footer from "./components/Footer";
+import NewCourse from './components/courses/newCourse'
+import AllCourses from "./components/courses/allCourses";
 
 
 function App () {
@@ -21,6 +23,9 @@ function App () {
             <Route path="/projets" element={ <Projets/> }/>
             <Route path="/team" element={ <Team/> }/>
             <Route path="/contacts" element={ <Contacts/> }/>
+            /** Courses routes */
+            <Route path="/courses" element={ <AllCourses/> }/>
+            <Route path="/courses/new" element={ <NewCourse/> }/>
             <Route path="*" element={ <Error/> }/>
          </Routes>
          <Footer/>

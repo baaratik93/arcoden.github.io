@@ -1,9 +1,8 @@
-// Import the functions you need from the SDKs you need
-import { initializeApp } from "firebase/app";
 
-// Your web app's Firebase configuration
-// For Firebase JS SDK v7.20.0 and later, measurementId is optional
-const firebaseConfig = {
+import {initializeApp} from "firebase/app"
+import {getFirestore} from 'firebase/firestore'
+import "firebase/firestore"
+const config = {
   apiKey: "AIzaSyB6ZCKMUtOv1sZuMmxMlp3Ad8_mWAMTfoY",
   authDomain: "arcoden-f732e.firebaseapp.com",
   projectId: "arcoden-f732e",
@@ -11,7 +10,11 @@ const firebaseConfig = {
   messagingSenderId: "359593111186",
   appId: "1:359593111186:web:11cda189acb3421c91404b",
   measurementId: "G-YPRPJ9LMQH"
+
 };
 
-// Initialize Firebase
-const app = initializeApp(firebaseConfig);
+// Initialize Firebase 
+export const app = initializeApp(config);
+export const db = getFirestore(app);
+console.log("Firebase initialisé avec success");
+// const analytics = getAnalytics(app);888
