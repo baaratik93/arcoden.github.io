@@ -20,7 +20,7 @@ export default  [
     },
     {  
         name: "Autoformations",
-        to: "/cours",
+        to: "/courses",
         fontSize:["6", "12", "16", "18"],
         mx:"2",
         // icon: <IoPeople/>
