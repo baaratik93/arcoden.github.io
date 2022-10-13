@@ -13,7 +13,7 @@ import Footer from "./components/Footer";
 
 function App () {
   return <BrowserRouter>
-         <Box pt='100'>
+         <Box pt='90'>
          <MenuNav/>
          <Routes>
             <Route exact  path="/" element={ <Home/> }/>
