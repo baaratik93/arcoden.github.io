@@ -18,10 +18,8 @@ const SingleMasterClass = ({title, level, author, image, language, videos, body,
 				mb={10}
 				bg={useColorModeValue('transparent','gray.700')}
 				_hover={{
-					bg: 'gray.300',
-					width: '100%',
-					height: '100%',
-					transform: 'rotateZ(-1deg) scale(.9)',
+					bg: useColorModeValue('gray.300','gray.500'),
+					transform: 'rotateZ(-1deg) scale(.99)',
 					transition: '200ms all'
 				}}
 			>
