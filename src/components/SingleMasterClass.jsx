@@ -14,8 +14,16 @@ const SingleMasterClass = ({title, level, author, image, language, videos, body,
 				rounded='lg'
 				overflow='hidden'
 				cursor='pointer'
+				zIndex='100'
 				mb={10}
 				bg={useColorModeValue('transparent','gray.700')}
+				_hover={{
+					bg: 'gray.300',
+					width: '100%',
+					height: '100%',
+					transform: 'rotateZ(-1deg) scale(.9)',
+					transition: '200ms all'
+				}}
 			>
 			<Badge
 				rounded='lg'
