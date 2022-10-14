@@ -25,10 +25,10 @@ import Logo from './Logo';
             <Button display={['block','block','none']} colorScheme='transparent' onClick={onOpen}>
                 <RiMenu4Line color={useColorModeValue('white','gold')}/>
             </Button>
-            <Drawer placement='left' onClose={onClose} isOpen={isOpen}>
+            <Drawer size='xs' placement='left' onClose={onClose} isOpen={isOpen}>
                 <DrawerOverlay />
                 <DrawerContent>
-                <DrawerHeader borderBottomWidth='1px'><Logo/></DrawerHeader>
+                <DrawerHeader bg='gray.700' borderBottomWidth='1px'><Logo/></DrawerHeader>
                 <DrawerBody bg= {useColorModeValue('gray.200','gray.700')}>
                 <Flex
                 flexDirection='column'
@@ -39,14 +39,19 @@ import Logo from './Logo';
                                                 textDecoration='none'
                                                 key={k}
                                                 icon={menu.icon}
-                                                
                                                 p={8}
-                                                borderBottom={k!=menus.length-1 && '5px solid'}
-                                                borderColor='gray.600'
-                                                fontSize={20}
+                                                borderBottom={k!=menus.length-1 && '1px solid'}
+                                                borderColor='gray.300'
+                                                fontSize={22}
                                                 onClick={() => {
                                                 router(menu.to)
                                                 onClose()} }
+                                                _hover={
+                                                    {
+                                                        bg:'gray.100',
+                                                        rounded: '2xl'
+                                                    }
+                                                }
                                             >
                                                     {menu.name}
                                             </Link>)
