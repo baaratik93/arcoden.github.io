@@ -1,10 +1,9 @@
-import {useColorModeValue,Badge ,Stack,HStack, Image, Box, Heading, Text, VStack, Flex, Button, SimpleGrid } from "@chakra-ui/react";
+import {AspectRatio,useColorModeValue,Badge ,Stack,HStack, Image, Box, Heading, Text, VStack, Flex, Button, SimpleGrid } from "@chakra-ui/react";
 import sailor from "../images/sailor.png";
 import isometric from "../images/isometric.png";
 import work from "../images/work.png";
 import ContactForm from '../components/Contacts'
 import SingleMasterClass from '../components/SingleMasterClass'
-import Footer from '../components/Footer'
 import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
 import { Carousel } from "react-responsive-carousel";
 import { CustomHeader } from "../components/CustomHeader";
@@ -12,22 +11,24 @@ import SingleStats from "../components/SingleStats";
 
 export const Home = () => {
   return (
-    <><SimpleGrid  >
+    <><SimpleGrid justifyContent="center" alignItems="center">
       <Flex
         flexDirection={["column", "column", "row", "row"]}
         alignItems="center"
         justifyItems="center"
         px={['5px','50px','100px']}
-         mt='-3'
+        pb={320}
+        mt='-40'
         pb={12}
         bg={useColorModeValue('gray.50','gray.700')}
       >
-        <VStack gap={1} mb='12' ml={["","","",150]}>
-            <Text 
+	  <VStack gap={1} mb='12' ml={["","","",150]}>
+       
+              <Text 
                fontSize='bold'
                as={Heading}
                textAlign="center"
-               maxW={['200px','250px','400px']}
+               maxW={['350px','450px','500px']}
                mt={10}
                p={1}
                color={useColorModeValue('gray.500','gray.300')}
@@ -43,7 +44,9 @@ export const Home = () => {
                 <Text color='gold'>Commencez-ici!</Text>
               </Button>
           </VStack>
-      <Carousel showStatus={false} showIndicators={false} showArrows={false} autoPlay autoFocus infiniteLoop interval={2500}>
+	 
+   	 
+	  <Carousel showThumbs={false} showStatus={false} showIndicators={false} showArrows={false} autoPlay autoFocus infiniteLoop interval={2500}>
         <Image src={sailor}  maxW="md" maxH="md" />
         <Image src={isometric}   maxW="md" maxH="md" />
         <Image src={work}   maxW="md" maxH="md" />

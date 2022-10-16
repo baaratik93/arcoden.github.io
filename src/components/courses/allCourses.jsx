@@ -1,4 +1,4 @@
-import { Text, SimpleGrid } from '@chakra-ui/react'
+import {Stack,Image, Text, SimpleGrid } from '@chakra-ui/react'
 import React from 'react'
 import { useState } from 'react'
 import { useEffect } from 'react'
@@ -16,18 +16,23 @@ const allCourses = () => {
         loadCourses()
     },[])
   return (
-    <SimpleGrid columns={['1','1','2','3']} mx='100px' gap={10}>{
-        cours.map(c => {
+    <Stack>
+    <Image src="vue.gif" p={100}/>
+    <SimpleGrid columns={['1','1','2','3']} p={20} mx='100px' gap={10}>{
+        cours.map((c,k) => {
             return <SingleMasterClass
+                key={k}
                 body={c.description}
                 videos={c.videos} 
                 level={c.niveau} 
                 author={c.author}
                 title={c.title}
                 status={c.status}
-                language={c.language}/>
+                language={c.language}
+                id={c.id}/>
         })
     }</SimpleGrid>
+ </Stack>
   )
 }
 

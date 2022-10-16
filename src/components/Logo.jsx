@@ -8,11 +8,11 @@ const Logo = () => {
     <HStack
           boxShadow="xl"  
           borderRadius="md"
-          bg={useColorModeValue('gray.500','gray.700')}
+         // bg={useColorModeValue('gray.500','gray.700')}
           h={50}
           p={2}>
         <Image
-          src='/Puzzle.svg'
+          src='logo.png'
           w={10} 
           h={8}
         />

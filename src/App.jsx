@@ -11,11 +11,12 @@ import { Box, Text } from "@chakra-ui/react";
 import Footer from "./components/Footer";
 import NewCourse from './components/courses/newCourse'
 import AllCourses from "./components/courses/allCourses";
+import SingleMasterClassPage from "./components/courses/SingleMasterClassPage";
 
 
 function App () {
   return <BrowserRouter>
-         <Box pt='90'>
+         <Box mt={250}>
          <MenuNav/>
          <Routes>
             <Route exact  path="/" element={ <Home/> }/>
@@ -26,6 +27,7 @@ function App () {
             /** Courses routes */
             <Route path="/courses" element={ <AllCourses/> }/>
             <Route path="/courses/new" element={ <NewCourse/> }/>
+            <Route path="/courses/:id" element={ <SingleMasterClassPage/> }/>
             <Route path="*" element={ <Error/> }/>
          </Routes>
          <Footer/>
