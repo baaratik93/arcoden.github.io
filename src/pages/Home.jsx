@@ -19,7 +19,6 @@ export const Home = () => {
         px={['5px','50px','100px']}
         pb={320}
         mt='-40'
-        pb={12}
         bg={useColorModeValue('gray.50','gray.700')}
       >
 	  <VStack gap={1} mb='12' ml={["","","",150]}>

@@ -10,8 +10,8 @@ import { BrowserRouter , Routes, Route } from "react-router-dom";
 import { Box, Text } from "@chakra-ui/react";
 import Footer from "./components/Footer";
 import NewCourse from './components/courses/newCourse'
-import AllCourses from "./components/courses/allCourses";
-import SingleMasterClassPage from "./components/courses/SingleMasterClassPage";
+import AllCourses from "./pages/allCourses";
+import SingleMasterClassPage from "./pages/SingleMasterClassPage";
 
 
 function App () {
